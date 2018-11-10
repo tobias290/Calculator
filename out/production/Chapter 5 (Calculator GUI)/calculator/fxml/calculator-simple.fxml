@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controllers.SimpleCalculatorController">
+    <fx:include prefWidth="500" source="menu-bar.fxml" />
+   <VBox prefHeight="620.0" prefWidth="420.0">
+      <children>
+      
+          <Label fx:id="display" alignment="CENTER_RIGHT" prefHeight="103.0" prefWidth="420.0" styleClass="display" text="0" textFill="WHITE">
+              <font>
+                  <Font size="70.0" />
+              </font>
+            <padding>
+               <Insets right="5.0" />
+            </padding>
+          </Label>
+      
+          <fx:include alignment="CENTER_RIGHT" prefWidth="420" source="calculator-simple-controls.fxml" />
+      </children>
+      <VBox.margin>
+         <Insets left="5.0" right="5.0" />
+      </VBox.margin>
+   </VBox>
+
+    <!--<stylesheets>-->
+        <!--<URL value="@../stylesheets/dark/style.css" />-->
+    <!--</stylesheets>-->
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

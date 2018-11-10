@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="32.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controllers.MenuBarController">
+   <!--<stylesheets>-->
+       <!--<URL value="@../stylesheets/dark/menu.css" />-->
+   <!--</stylesheets>-->
+
+    <children>
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem fx:id="switchModeItem" mnemonicParsing="false" onAction="#switchCalculatorModeClick" text="Scientific Mode" />
+                  <MenuItem fx:id="angleModeItem" mnemonicParsing="false" onAction="#switchAngleMode" text="Radian Mode" />
+                  <CheckMenuItem fx:id="hypotenuseModeCheckItem" mnemonicParsing="false" onAction="#changeTrigMode" text="Hypotenuse Mode" />
+                  <CheckMenuItem fx:id="feModeCheckItem" mnemonicParsing="false" text="FE Mode" onAction="#changeFeMode" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Theme">
+              <items>
+                  <CheckMenuItem fx:id="orangeThemeCheckItem" mnemonicParsing="false" onAction="#changeTheme" selected="true" text="Orange &amp; Grey" userData="orange_grey" />
+                  <CheckMenuItem fx:id="darkThemeCheckItem" mnemonicParsing="false" onAction="#changeTheme" text="Dark" userData="dark" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
