@@ -1,6 +1,6 @@
 # Scientific Calculator
 
-Basic & Scientific calculator implement in Java with JavaFX.
+Basic & Scientific calculator implemented in Java using JavaFX.
 
 Includes two themes:
 * Orange & Grey
